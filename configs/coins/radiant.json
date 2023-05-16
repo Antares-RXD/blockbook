@@ -25,7 +25,7 @@
       "version": "1.2.0",
       "binary_url": "https://github.com/Antares-RXD/radiant-node/releases/download/1.2.0/radiant.bin-1.2.0.tar.gz",
       "verification_type": "sha256",
-      "verification_source": "5014a3ee54713ee40a2eb0baca68635c6afd8d67c3857e016ffe61541cf00341",
+      "verification_source": "44cbe5d80c550837c6b5e0e00c7d047b2d0412983fdc1d77d6b3cca6ad662041",
       "extract_command": "tar -C backend -xf",
       "exclude_files": [],
       "exec_command_template": "{{.Env.BackendInstallPath}}/{{.Coin.Alias}}/radiantd -datadir={{.Env.BackendDataPath}}/{{.Coin.Alias}}/backend -conf={{.Env.BackendInstallPath}}/{{.Coin.Alias}}/{{.Coin.Alias}}.conf -pid=/run/{{.Coin.Alias}}/{{.Coin.Alias}}.pid",
