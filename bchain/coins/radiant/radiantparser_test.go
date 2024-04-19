@@ -4,13 +4,11 @@ package radiant
 
 import (
 	"encoding/hex"
-	"math/big"
 	"os"
 	"reflect"
 	"testing"
 
 	"github.com/martinboehm/btcutil/chaincfg"
-	"github.com/trezor/blockbook/bchain"
 	"github.com/trezor/blockbook/bchain/coins/btc"
 )
 
