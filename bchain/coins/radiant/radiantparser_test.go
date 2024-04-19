@@ -1,12 +1,16 @@
+//go:build unittest
+
 package radiant
 
 import (
 	"encoding/hex"
+	"math/big"
 	"os"
 	"reflect"
 	"testing"
 
 	"github.com/martinboehm/btcutil/chaincfg"
+	"github.com/trezor/blockbook/bchain"
 	"github.com/trezor/blockbook/bchain/coins/btc"
 )
 
@@ -28,8 +32,8 @@ func Test_GetAddrDescFromAddress_Mainnet(t *testing.T) {
 	}{
 		{
 			name:    "P2PKH",
-			args:    args{address: "1JKgN43B9SyLuZH19H5ECvr4KcfrbVHzZ6"},
-			want:    "76a914be027bf3eac907bd4ac8cb9c5293b6f37662722088ac",
+			args:    args{address: "1AhYCH1yFNU2kSJGWEYhFQHpwCGnKGUCm4"},
+			want:    "76a9146a63cf70ac73ff2684ab27e1c393ba0c7dd8a60188ac",
 			wantErr: false,
 		},
 	}
