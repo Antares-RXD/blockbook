@@ -46,6 +46,7 @@ import (
 	"github.com/trezor/blockbook/bchain/coins/polis"
 	"github.com/trezor/blockbook/bchain/coins/polygon"
 	"github.com/trezor/blockbook/bchain/coins/qtum"
+	"github.com/trezor/blockbook/bchain/coins/radiant"
 	"github.com/trezor/blockbook/bchain/coins/ravencoin"
 	"github.com/trezor/blockbook/bchain/coins/ritocoin"
 	"github.com/trezor/blockbook/bchain/coins/snowgem"

@@ -53,6 +53,7 @@
 | eCash                            | 9197             | 9097               | 8097        | 38397                                |
 | Avalanche                        | 9198             | 9098               | 8098        | 38398 p2p                            |
 | Avalanche Archive                | 9199             | 9099               | 8099        | 38399 p2p                            |
+| Radiant                          | 9250             | 9150               | 8150        | 39050                                |
 | Ethereum Testnet Holesky         | 19116            | 19016              | 18016       | 18116 http, 18516 authrpc, 48316 p2p |
 | Bitcoin Signet                   | 19120            | 19020              | 18020       | 48320                                |
 | Bitcoin Regtest                  | 19121            | 19021              | 18021       | 48321                                |
