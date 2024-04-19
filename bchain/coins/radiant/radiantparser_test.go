@@ -1,3 +1,5 @@
+//go:build unittest
+
 package radiant
 
 import (
@@ -29,9 +31,27 @@ func Test_GetAddrDescFromAddress_Mainnet(t *testing.T) {
 		wantErr bool
 	}{
 		{
-			name:    "P2PKH",
-			args:    args{address: "1JKgN43B9SyLuZH19H5ECvr4KcfrbVHzZ6"},
-			want:    "76a914be027bf3eac907bd4ac8cb9c5293b6f37662722088ac",
+			name:    "P2PKH1",
+			args:    args{address: "RAoGkGhKwzxLnstApumYPD2eTrAJ849cga"},
+			want:    "76a91410a8805f1a6af1a5927088544b0b6ec7d6f0ab8b88ac",
+			wantErr: false,
+		},
+		{
+			name:    "P2PKH2",
+			args:    args{address: "RTq37kPJqMS36tZYunxo2abrBMLeYSCAaa"},
+			want:    "76a914cb78181d62d312fdb9aacca433570150dcf0dec288ac",
+			wantErr: false,
+		},
+		{
+			name:    "P2SH1",
+			args:    args{address: "rCzjkBoY2duVn2WizKxfBedTVWAg6UhfLZ"},
+			want:    "a9144a2a40987c74578ee517d426aa2c43fc568f7e0887",
+			wantErr: false,
+		},
+		{
+			name:    "P2SH2",
+			args:    args{address: "rDzGemZkv9FbDDh5pvWfr7TWtMUnNRRE7T"},
+			want:    "a914550bc2fcc1992afade4d298326ee6a03ab975a9387",
 			wantErr: false,
 		},
 	}
