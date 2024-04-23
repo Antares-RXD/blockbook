@@ -10,7 +10,7 @@ import (
 // magic numbers
 const (
 	MainnetMagic wire.BitcoinNet = 0xe8f3e1e3
-	TestnetMagic wire.BitcoinNet = 0x544e5652
+	TestnetMagic wire.BitcoinNet = 0xf4f3e5f4
 )
 
 // chain parameters
